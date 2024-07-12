@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cafe Rehegua</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/sale.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="section_inner">
+        <div class="section_title">
+            <h1>Venta de café recien molido</h1>
+        </div>
+    </section>
+
+    <section class="section_inner menu_section">
+        <div class="center">
+            <h1 class="menu_title">opciones (de productos)</h1>
+        </div>
+        <ul class="menu_list coffee_menu">
+            <li class="caffee_menu_list_item">
+                <div class="caffee_menu_content">
+                    <h2 class="menu_item_title">Mezcla original 200 g</h2>
+                    <p class="caffee_menu_price">15.000 Guaranies</p>
+                </div>
+                <img src="images/sample_cafe1.jpg" class="caffee_menu_image">
+            </li>
+            <li class="caffee_menu_list_item">
+                <div class="caffee_menu_content">
+                    <h2 class="menu_item_title">Mezcla original 500 g</h2>
+                    <p class="caffee_menu_price">20.000 Guaranies</p>
+                </div>
+                <img src="images/sample_cafe1.jpg" class="caffee_menu_image">
+            </li>
+            <li class="caffee_menu_list_item">
+                <div class="caffee_menu_content">
+                    <h2 class="menu_item_title">Mezcla especial 200 g</h2>
+                    <p class="caffee_menu_price">17.000 Guaranies</p>
+                </div>
+                <img src="images/sample_cafe3.jpg" class="caffee_menu_image">
+            </li>
+            <li class="caffee_menu_list_item">
+                <div class="caffee_menu_content">
+                    <h2 class="menu_item_title">Mezcla especial 500 g</h2>
+                    <p class="caffee_menu_price">30.000 Guaranies.</p>
+                </div>
+                <img src="images/sample_cafe3.jpg" class="caffee_menu_image">
+            </li>
+        </ul>
+        <h2>Gastos de envío.</h2>
+        <ul>
+            <li>15.000 Guaranies por gastos de envío si el importe total es inferior a 50.000 Guaranies.</li>
+            <li>10.000 Guaranies por un mínimo de 30.000 Guaranies.</li>
+            <li>Gratuito a partir de 50.000 Guaranies!</li>
+        </ul>
+    </section>
+
+    <section class="section_inner">
+        <h2>pida aqui</h2>
+        <form>
+            <p>Seleccione el producto de su interes</p>
+            <div>
+                <select id="product" required>
+                    <option hidden value="0">Por favor, seleccione.</option>
+                    <option value="500">Mezcla original 200g Gs. 15.000</option>
+                    <option value="900">Mezcla original 500g Gs. 20.000</option>
+                    <option value="700">Mezcla especial 200g Gs. 17.000</option>
+                    <option value="1200">Mezcla especial 500g, Gs. 30.000</option>
+                </select>
+                <p>Seleccione la cantidad</p>
+                <input type="number" min="1" max="5" id="number" required>
+            </div>
+            <br>
+            <input type="button" class="btn" value="Importe total" id="subtotal">
+            <input type="button" class="btn" value="Agregar" id="add">
+        </form>
+    </section>
+
+
+
+    <script type="text/javascript" src="/javascripts/sale.js"></script>
+</body>
+
+</html>
